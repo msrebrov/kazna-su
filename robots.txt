@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kazna.su/sitemap.xml
