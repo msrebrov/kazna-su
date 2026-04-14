@@ -6,4 +6,5 @@
 *.key
 node_modules/
 output/
+bot.env
 .claude/
