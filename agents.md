@@ -225,9 +225,18 @@ Notifications
 ## 10. File Map
 
 ```
-/Users/main/Code/РОДИТЕЛЬСКИЙ КОМИТЕТ/
-├── agents.md                  ← THIS FILE (AI reference, update every session)
-├── create_doc.py              ← One-off script: generated the concept DOCX
+/Users/main/Code/kazna.su/
+├── .github/workflows/
+│   └── deploy.yml              ← GitHub Actions: SSH deploy on push to main
+├── agents.md                   ← THIS FILE (AI reference, update every session)
+├── create_doc.py               ← One-off script: generated the concept DOCX
+├── index.html                  ← Production landing page (copy of main.html)
+├── main.html                   ← Source landing page (брендбук)
+├── nginx.conf                  ← Nginx vhost config (template, installed on server)
+├── robots.txt                  ← SEO robots config
+├── SERVER-CONNECT.md           ← Server connection & deploy reference
+├── SERVER-CONNECT-TEMPLATE.md  ← Template for new projects
+├── .gitignore
 └── output/
     └── Концепция_Родительский_Комитет.docx   ← Full product concept document
 ```
@@ -270,5 +279,6 @@ Notifications
 |------|----------------|
 | 2026-04-05 | Initial project setup. Generated concept DOCX (`create_doc.py`). Created `agents.md` from concept document. |
 | 2026-04-14 | Updated platform strategy: Max Messenger Bot as primary entry + Telegram Bot in parallel (replacing Telegram Mini App). Updated architecture, tech stack, features, and key decisions. |
+| 2026-04-14 | Created GitHub repo (msrebrov/kazna-su), set up CI/CD (GitHub Actions SSH deploy), deployed landing page to VPS, configured nginx + SSL (Let's Encrypt) at kazna.su. |
 
 > **AI instructions:** At the end of each session, append a one-line row to this table describing what was built or changed.
